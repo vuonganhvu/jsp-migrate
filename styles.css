@@ -1,0 +1,158 @@
+/*material*/
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(assets/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(assets/fonts/MaterialIcons-Regular.woff) format('woff'),
+    url(assets/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding: 0;
+}
+
+.rr-icon{
+    cursor: pointer;
+    user-select: none;
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(assets/fonts/Avenir-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: AvenirBook;
+    src: url(assets/fonts/Avenir-Book.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url(assets/fonts/Avenir-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: AvenirRoman;
+    src: url(assets/fonts/Avenir-Roman.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: AvenirLight;
+    src: url(assets/fonts/Avenir-Light.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: AvenirHeavy;
+    src: url(assets/fonts/Avenir-Heavy.ttf) format("truetype");
+}
+
+body {
+    font-family: AvenirMedium, sans-serif;
+    font-size: 14px;
+    background: #ffffff url("assets/img/header-bg.png") repeat-x;
+}
+
+#wrapper {
+    width: 1110px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header-logo {
+    margin-top: 15px;
+    float: left;
+}
+
+ul.header-menu {
+    float: right;
+    margin-top: 22px;
+    margin-left: 90px;
+    list-style: none;
+}
+
+ul.header-menu li {
+    display: inline-block;
+    line-height: 45px;
+}
+
+ul.header-menu li:nth-child(n+2) {
+margin-left: 10px;
+}
+
+ul.header-menu li a {
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+    height: 50px;
+    color: white;
+}
+
+ul.header-menu li a span.title {
+    padding: 0 0 0 8px;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.34;
+    letter-spacing: 0.6px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul.header-menu li a img {
+    vertical-align: middle;
+    padding: 3px 0 0 0;
+}
+
+ul.header-menu li a span.title span.username {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+header::after {
+    height: 0;
+    clear: both;
+    content: '';
+    display: block;
+}
