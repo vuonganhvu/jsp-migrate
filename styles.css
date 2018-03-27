@@ -95,6 +95,9 @@ body {
     padding: 0;
     margin: 0 auto;
 }
+header{
+    height: 90px;
+}
 
 .header-logo {
     margin-top: 15px;
@@ -156,3 +159,225 @@ header::after {
     content: '';
     display: block;
 }
+
+.select-wrap{
+    position: relative;
+    display: inline-block;
+}
+.select-wrap .material-icons{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 40px;
+    width: 30px;
+    display: block;
+    background-color: #404041;
+    color: white;
+    font-size: 27px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 1;
+}
+.select-wrap .form-search{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 110px;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+}
+.select-wrap span{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: block;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+#frm-search{
+    width: 100%;
+    background: #ee2f42;
+}
+
+#frm-search-content{
+    padding: 20px;
+}
+
+#frm-search h1 {
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.frm-input{
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.27;
+    letter-spacing: normal;
+    text-align: left;
+    color: #cccccc;
+}
+
+.frm-input::placeholder{
+    color: #000;
+    opacity: 0.3;
+}
+
+.select-wrap .frm-input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 110px;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+    padding-top: 3px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.w330 {
+    width: 330px;
+}
+
+.w129{
+    width: 129px;
+}
+
+.w80{
+    width: 80px;
+}
+.w110{
+    width: 110px;
+}
+
+.pd-l-10{
+    padding-left: 10px;
+}
+
+.mg-l-25{
+    margin-left: 25px;
+}
+
+.mg-l-10{
+    margin-left: 10px;
+}
+
+.mg-l-15{
+    margin-left: 15px !important;
+}
+
+.lab-room{
+    width: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.77;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: -29px;
+    background-color: transparent !important;
+}
+
+.add-room{
+    display: inline;
+    font-size: 11px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.27;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+    margin-top: 29px;
+    background-color: transparent !important;
+}
+
+.check-in{
+    display: inline-block;
+    position: relative;
+    padding-left: 37px;
+}
+.check-out {
+    position: relative;
+    padding-left: 37px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.icon-calendar{
+    position: absolute;
+    left: 0px; top: 0px;
+}
+.select-adult{
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+.frm-search-tag-boder{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #404041;
+    position: relative;
+}
+
+.img-tag{
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+.hotel-rating{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.77;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.check-box{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+}
+
+.text-star{
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 2px;
+    display: inline-block;
+}
+

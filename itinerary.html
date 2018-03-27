@@ -3,68 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+
     <link href="reset.css" rel="stylesheet" type="text/css"/>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <!--<script src="jquery-1.6.2.min.js"></script>-->
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="bootstrap-datetimepicker.min.js"></script>
+    <script src="bootstrap-datetimepicker.uk.js"></script>
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <div class="header-logo">
-                <a class="navigation_link"
-                   href="https://www.readyrooms.com.au/agents/">
-                    <img width="294" height="64"
-                         src="assets/img/header-logo.png"
-                         alt="ReadyRooms" title="ReadyRooms" />
+<div id="wrapper">
+    <header>
+        <div class="header-logo">
+            <a class="navigation_link"
+               href="https://www.readyrooms.com.au/agents/">
+                <img width="294" height="64"
+                     src="assets/img/header-logo.png"
+                     alt="ReadyRooms" title="ReadyRooms"/>
+            </a>
+        </div>
+        <ul class="header-menu">
+            <li class="header-menu-item">
+                <a href="#">
+                    <img width="55" height="38"
+                         src="assets/img/group-booking.png"
+                         alt="Group Bookings" title="Group Bookings"/>
+                    <span class="title">Group<br/>Bookings</span>
                 </a>
-            </div>
-            <ul class="header-menu">
-                <li class="header-menu-item">
-                    <a href="#">
-                        <img width="55" height="38"
-                             src="assets/img/group-booking.png"
-                             alt="Group Bookings" title="Group Bookings"/>
-                        <span class="title">Group<br/>Bookings</span>
-                    </a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#">
-                        <img width="38" height="38"
-                             src="assets/img/helpful-links.png"
-                             alt="Helpful Links" title="Helpful Links"/>
-                        <span class="title">Helpful<br/>Links</span>
-                    </a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#">
-                        <img width="49" height="35"
-                             src="assets/img/chat.png"
-                             alt="Chat" title="Chat"/>
-                        <span class="title">Chat</span>
-                    </a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#">
-                        <img width="22" height="37"
-                             src="assets/img/call.png"
-                             alt="Call" title="Call"/>
-                        <span class="title">Call<br/>1300 661 874</span>
-                    </a>
-                </li>
-                <li class="header-menu-item username">
-                    <a href="#">
-                        <img width="40" height="40"
-                             src="assets/img/log-out.png"
-                             alt="Log out" title="Log out"/>
-                        <span class="title">
+            </li>
+            <li class="header-menu-item">
+                <a href="#">
+                    <img width="38" height="38"
+                         src="assets/img/helpful-links.png"
+                         alt="Helpful Links" title="Helpful Links"/>
+                    <span class="title">Helpful<br/>Links</span>
+                </a>
+            </li>
+            <li class="header-menu-item">
+                <a href="#">
+                    <img width="49" height="35"
+                         src="assets/img/chat.png"
+                         alt="Chat" title="Chat"/>
+                    <span class="title">Chat</span>
+                </a>
+            </li>
+            <li class="header-menu-item">
+                <a href="#">
+                    <img width="22" height="37"
+                         src="assets/img/call.png"
+                         alt="Call" title="Call"/>
+                    <span class="title">Call<br/>1300 661 874</span>
+                </a>
+            </li>
+            <li class="header-menu-item username">
+                <a href="#">
+                    <img width="40" height="40"
+                         src="assets/img/log-out.png"
+                         alt="Log out" title="Log out"/>
+                    <span class="title">
                             <span class="username">Hung Nguyen</span>
                             <br/>
                             Log out
                         </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div style="height: 20px"></div>
+
+    <div id="frm-search">
+        <div id="frm-search-content">
+            <h1>CHANGE SEARCH</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input class="frm-input w330" type="text"
+                           placeholder="MELBOURNE, VICTORIA, AUSTRALIA"/>
+                </div>
+                <div class="col-sm-5">
+                    <div class="input-append date form_datetime check-in">
+                            <span class="add-on icon-calendar">
+                                <i class="icon-th">
+                                <img width="31" height="30" src="assets/img/icon-calendar.png"/>
+                                </i>
+                            </span>
+                        <input class="frm-input w129" size="16" type="text" value="" readonly>
+                    </div>
+                    <div class="input-append date form_datetime check-out">
+                            <span class="add-on icon-calendar">
+                                <i class="icon-th">
+                                <img width="31" height="30" src="assets/img/icon-calendar.png"/>
+                            </i>
+                            </span>
+                        <input class="frm-input w129" size="16" type="text" value="" readonly>
+                    </div>
+                    <div class="inline-block pd-l-10">
+                        <input class="frm-input w80" type="text"/>
+                    </div>
+                </div>
+                <div class="col-sm-3" style="position: relative">
+                    <div class="select-adult clearfix" >
+                        <div class="select-wrap">
+                            <select class="frm-input w110">
+                                <option value="1">1 ADULT</option>
+                                <option value="2">2 ADULTS</option>
+                                <option value="3">3 ADULTS</option>
+                            </select>
+                            <i class="material-icons">arrow_drop_down</i>
+                            <span></span>
+                            <span class="lab-room">Room: 1</span>
+                        </div>
+                        <div class="select-wrap mg-l-10">
+                            <select class="frm-input w110">
+                                <option value="1">1 CHILDREN</option>
+                                <option value="2">2 CHILDRENS</option>
+                                <option value="3">3 CHILDRENS</option>
+                            </select>
+                            <i class="material-icons">arrow_drop_down</i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="select-adult clearfix" >
+                        <div class="select-wrap">
+                            <select class="frm-input w110">
+                                <option value="1">1 ADULT</option>
+                                <option value="2">2 ADULTS</option>
+                                <option value="3">3 ADULTS</option>
+                            </select>
+                            <i class="material-icons">arrow_drop_down</i>
+                            <span></span>
+                            <span class="lab-room">Room: 1</span>
+                        </div>
+                        <div class="select-wrap mg-l-10">
+                            <select class="frm-input w110">
+                                <option value="1">1 CHILDREN</option>
+                                <option value="2">2 CHILDRENS</option>
+                                <option value="3">3 CHILDRENS</option>
+                            </select>
+                            <i class="material-icons">arrow_drop_down</i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <span class="add-room" style="position: absolute; right: 9px; bottom: -10px">+ADD ROOM</span>
                     </a>
-                </li>
-            </ul>
-        </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="frm-search-tag-boder">
+                        <a href="#">
+                            <img class="img-tag" width="22" height="26"
+                                 src="assets/img/tag.png"
+                                 alt="Tag" title="Tag"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div><span class="hotel-rating">Hotel Rating</span></div>
+                    <div >
+                        <input class="check-box" type="checkbox">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+
+                        <input class="check-box mg-l-15" type="checkbox">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+
+                        <input class="check-box mg-l-15" type="checkbox">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+
+                        <input class="check-box mg-l-15" type="checkbox">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+                        <img width="12" height="12" src="assets/img/rectangle.png">
+
+                        <input class="check-box mg-l-15" type="checkbox">
+                        <span class="text-star">ALL</span>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
     </div>
+</div>
 </body>
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - hh:ii"
+    });
+</script>
 </html>
