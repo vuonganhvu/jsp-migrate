@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3" style="position: relative">
-                    <div class="select-adult clearfix" >
+                    <div class="select-adult clearfix">
                         <div class="select-wrap">
                             <select class="frm-input w110">
                                 <option value="1">1 ADULT</option>
@@ -124,7 +124,7 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="select-adult clearfix" >
+                    <div class="select-adult clearfix">
                         <div class="select-wrap">
                             <select class="frm-input w110">
                                 <option value="1">1 ADULT</option>
@@ -153,51 +153,161 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="frm-search-tag-boder">
-                        <a href="#">
+                        <a href="#" id="icon-nyop-tag-click">
                             <img class="img-tag" width="22" height="26"
                                  src="assets/img/tag.png"
                                  alt="Tag" title="Tag"/>
                         </a>
+                        <div class="slider-nyop" id="frame-nyop-slider">
+                            <span class="slider-nyop-title">NYOP</span>
+                            <div class="slider-wrap">
+                                <input type="range" min="1" max="100" value="12" class="slider slider-nyop-slide"
+                                       id="range-nyop">
+                            </div>
+                            <div class="slider-nyop-value">
+                                <span class="value" id="nyop-value">
+                                    12%
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-5">
                     <div><span class="hotel-rating">Hotel Rating</span></div>
-                    <div >
-                        <input class="check-box" type="checkbox">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-
-                        <input class="check-box mg-l-15" type="checkbox">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-
-                        <input class="check-box mg-l-15" type="checkbox">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-
-                        <input class="check-box mg-l-15" type="checkbox">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-                        <img width="12" height="12" src="assets/img/rectangle.png">
-
-                        <input class="check-box mg-l-15" type="checkbox">
+                    <div>
+                        <label class="checkbox-rating">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <label class="checkbox-rating">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <label class="checkbox-rating">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <label class="checkbox-rating">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span class="rating-star"></span>
+                        <span class="rating-star"></span>
+                        <label class="checkbox-rating">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
                         <span class="text-star">ALL</span>
                     </div>
                 </div>
-                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
+                    <div class="reset-filter">RESET FILTERS</div>
+                </div>
+            </div>
+            <div class="line-white"></div>
+            <div class="row" id="search-detail">
+                <div class="col-sm-4" id="slider-search">
+                    <div class="row" id="text-slider">
+                        <div class="col-sm-6 max-price-text-1">
+                            Maximum Price<span class="max-price-text-2"> (per night)</span>
+                        </div>
+                        <div class="col-sm-6 box-text">
+                            660 AUD
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="range-price">
+                            <!--<p>Value: <span id="demo"></span></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="select-wrap select-wrap-right-28">
+                        <select class="frm-input w160">
+                            <option value="1">ROOM TYPE</option>
+                            <option value="2">ROOM TYPE</option>
+                            <option value="3">ROOM TYPE</option>
+                        </select>
+                        <i class="material-icons">arrow_drop_down</i>
+                        <span></span>
+                    </div>
+                    <div class="select-wrap select-wrap-right-28">
+                        <select class="frm-input w160">
+                            <option value="1">ROOM TYPE</option>
+                            <option value="2">ROOM TYPE</option>
+                            <option value="3">ROOM TYPE</option>
+                        </select>
+                        <i class="material-icons">arrow_drop_down</i>
+                        <span></span>
+                    </div>
+                    <div class="select-wrap select-wrap-right-28">
+                        <select class="frm-input w160">
+                            <option value="1">ROOM TYPE</option>
+                            <option value="2">ROOM TYPE</option>
+                            <option value="3">ROOM TYPE</option>
+                        </select>
+                        <i class="material-icons">arrow_drop_down</i>
+                        <span></span>
+                    </div>
+                    <button type="button" id="frm-search-btn" class="btn btn-info w140">
+                        SEARCH <i class="material-icons"></i>
+                        <span class="glyphicon glyphicon-search icon-search"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 <script type="text/javascript">
     $(".form_datetime").datetimepicker({
         format: "dd MM yyyy - hh:ii"
     });
+</script>
+<script>
+    var slider = document.getElementById("range-price");
+    //    var output = document.getElementById("demo");
+    //    output.innerHTML = slider.value;
+
+    //    slider.oninput = function() {
+    //        output.innerHTML = this.value;
+    //    }
+
+    var slider_nyop = document.getElementById("range-nyop");
+    var output = document.getElementById("nyop-value");
+    output.innerHTML = slider_nyop.value + '%';
+
+    slider_nyop.oninput = function () {
+        output.innerHTML = slider_nyop.value + '%';
+    };
+
+    var icon_nyop_click = document.getElementById('icon-nyop-tag-click');
+    var frame_nyop_slider = document.getElementById('frame-nyop-slider');
+    $(document).ready(function(){
+        var show_frame = false;
+        icon_nyop_click.onclick = function(){
+            if(show_frame) {
+                frame_nyop_slider.classList.remove("slider-nyop--show");
+            } else {
+                frame_nyop_slider.classList.add("slider-nyop--show");
+            }
+            show_frame = !show_frame;
+        };
+    });
+
 </script>
 </html>
